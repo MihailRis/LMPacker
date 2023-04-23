@@ -38,11 +38,9 @@ public class Rect {
     }
 
     public int getPackerScore() {
-        return height * 1000 + width;
-
-        /*if (width * height > 100)
+        if (width * height > 100)
             return height * height * 1000;
-        return (width * height * height);*/
+        return (width * height * height);
     }
 
     public int getArea() {

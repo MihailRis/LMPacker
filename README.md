@@ -24,12 +24,13 @@ LMPacker packer = new LMPacker(sizes);
 int width = 1024;
 int height = 1024;
 
-if (!packer.buildCompact(width, height, 1)) {
+if (packer.buildCompact(width, height, 1)) {
+    List<Rect> rects = packer.getResult();
+    // visualization
+    // ...
+} else {
     System.err.println("Could not to pack");
 }
-
-// visualization
-// ...
 ```
 
 Atlas generated in 148 ms [compact mode]:

@@ -116,7 +116,7 @@ public class LMPacker {
                     }
                     prect = findCollision(x, y, rw, rh);
                     if (prect != null) {
-                        x = (prect.x >> mpbit) + (prect.width >> mpbit);
+                        x = (prect.x >> mpbit) + (prect.width >> mpbit) - 1;
                         continue;
                     }
                     fill(rect, x, y, rw, rh);
@@ -125,7 +125,7 @@ public class LMPacker {
                     placed.add(rect);
                     return true;
                 } else {
-                    x = (prect.x >> mpbit) + (prect.width >> mpbit);
+                    x = (prect.x >> mpbit) + (prect.width >> mpbit) - 1;
                 }
             }
             if (skiplines) {

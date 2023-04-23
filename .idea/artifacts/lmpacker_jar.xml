@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lmpacker:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/lmpacker_jar</output-path>
+    <root id="archive" name="lmpacker.jar">
+      <element id="module-output" name="lmpacker" />
+    </root>
+  </artifact>
+</component>

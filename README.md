@@ -33,13 +33,13 @@ if (packer.buildCompact(width, height, 1)) {
 }
 ```
 
-Atlas generated in 148 ms [compact mode]:
+Atlas generated in 236 ms [compact mode]:
 - black - images
 - white - extensions
 - red - unused space
 
 <img src="examples/c3000_s46_compact.png"></img>
 
-Atlas generated in 86 ms [fast mode]:
+Atlas generated in 83 ms [fast mode]:
 
 <img src="examples/c3000_s46_fast.png"></img>

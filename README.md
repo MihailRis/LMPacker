@@ -25,6 +25,8 @@ int width = 1024;
 int height = 1024;
 
 if (packer.buildCompact(width, height, 1)) {
+    // rectangles have same order as input (sizes)
+    // rectangle can be indentified by index
     List<Rect> rects = packer.getResult();
     // visualization
     // ...
